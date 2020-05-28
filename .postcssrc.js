@@ -5,8 +5,12 @@ const purgecss = require('@fullhuman/postcss-purgecss');
 module.exports = {
   plugins: [
     postcssPresetEnv({
-      stage: 2,
+      stage: 0,
+      autoprefixer: { grid: true },
       features: {
+        'custom-properties': {
+          'preserve': false,
+        },
         'nesting-rules': true,
       },
     }),
