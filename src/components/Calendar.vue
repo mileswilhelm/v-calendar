@@ -750,38 +750,6 @@ export default {
 
 <style>
 .vc-container {
-  --slide-translate: 22px;
-  --slide-duration: 0.15s;
-  --slide-timing: ease;
-
-  --header-padding: 10px 10px 0 10px;
-  --title-padding: 0 8px;
-  --arrows-padding: 8px 10px;
-  --arrow-font-size: 26px;
-  --weekday-padding: 5px 0;
-  --weeks-padding: 5px 6px 7px 6px;
-
-  --nav-container-width: 170px;
-
-  --day-min-height: 28px;
-  --day-content-width: 28px;
-  --day-content-height: 28px;
-  --day-content-margin: 1.6px auto;
-  --day-content-transition-time: 0.13s ease-in;
-  --day-content-bg-color-hover: hsla(211, 25%, 84%, 0.3);
-  --day-content-dark-bg-color-hover: hsla(216, 15%, 52%, 0.3);
-  --day-content-bg-color-focus: hsla(211, 25%, 84%, 0.4);
-  --day-content-dark-bg-color-focus: hsla(216, 15%, 52%, 0.4);
-
-  --highlight-height: 28px;
-
-  --dot-diameter: 5px;
-  --dot-border-radius: 50%;
-  --dot-spacing: 3px;
-
-  --bar-height: 3px;
-  --bars-width: 75%;
-
   font-family: BlinkMacSystemFont, -apple-system, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     'Helvetica', 'Arial', sans-serif;
@@ -798,7 +766,7 @@ export default {
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: var(--arrows-padding);
+  padding: 8px 10px;
   pointer-events: none;
   &.title-left {
     justify-content: flex-end;

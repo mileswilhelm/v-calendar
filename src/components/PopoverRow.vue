@@ -85,10 +85,9 @@ export default {
 
 <style lang="postcss" scoped>
 .vc-day-popover-row {
-  --day-content-transition-time: 0.13s ease-in;
   display: flex;
   align-items: center;
-  transition: all var(--day-content-transition-time);
+  transition: all 0.13s ease-in;
   &:not(:first-child) {
     margin-top: 3px;
   }
@@ -101,7 +100,7 @@ export default {
   width: 15px;
   margin-right: 3px;
   & span {
-    transition: all var(--day-content-transition-time);
+    transition: all 0.13s ease-in;
   }
 }
 .vc-day-popover-row-content {

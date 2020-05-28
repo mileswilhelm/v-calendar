@@ -198,7 +198,7 @@ export default {
   display: flex;
   align-items: stretch;
   user-select: none;
-  padding: var(--header-padding);
+  padding: 10px 10px 0 10px;
   &.align-left {
     order: -1;
     justify-content: flex-start;
@@ -230,7 +230,7 @@ export default {
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
-  padding: var(--title-padding);
+  padding: 0 8px;
 }
 
 .vc-weekday {
@@ -238,7 +238,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex: 1;
-  padding: var(--weekday-padding);
+  padding: 5px 0;
   cursor: default;
   user-select: none;
 }
@@ -246,6 +246,6 @@ export default {
 .vc-weeks {
   flex-shrink: 1;
   flex-grow: 1;
-  padding: var(--weeks-padding);
+  padding: 5px 6px 7px 6px;
 }
 </style>

@@ -473,7 +473,7 @@ export default {
 <style lang="postcss" scoped>
 .vc-day {
   position: relative;
-  min-height: var(--day-min-height);
+  min-height: 28px;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -522,20 +522,20 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: var(--day-content-width);
-  height: var(--day-content-height);
-  margin: var(--day-content-margin);
+  width: 28px;
+  height: 28px;
+  margin: 1.6px auto;
   user-select: none;
   &:hover {
-    background-color: var(--day-content-bg-color-hover);
+    background-color: hsla(211, 25%, 84%, 0.3);
     &.vc-is-dark {
-      background-color: var(--day-content-dark-bg-color-hover);
+      background-color: hsla(216, 15%, 52%, 0.3);
     }
   }
   &:focus {
-    background-color: var(--day-content-bg-color-focus);
+    background-color: hsla(211, 25%, 84%, 0.4);
     &.vc-is-dark {
-      background-color: var(--day-content-dark-bg-color-focus);
+      background-color: hsla(216, 15%, 52%, 0.4);
     }
   }
 }
@@ -547,8 +547,8 @@ export default {
 }
 
 .vc-highlight {
-  width: var(--highlight-height);
-  height: var(--highlight-height);
+  width: 28px;
+  height: 28px;
   &.vc-highlight-base-start {
     width: 50% !important;
     border-radius: 0 !important;
@@ -575,12 +575,12 @@ export default {
 }
 
 .vc-dot {
-  width: var(--dot-diameter);
-  height: var(--dot-diameter);
-  border-radius: var(--dot-border-radius);
-  transition: all var(--day-content-transition-time);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  transition: all 0.13s ease-in;
   &:not(:last-child) {
-    margin-right: var(--dot-spacing);
+    margin-right: 3px;
   }
 }
 
@@ -588,12 +588,12 @@ export default {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: var(--bars-width);
+  width: 75%;
 }
 
 .vc-bar {
   flex-grow: 1;
-  height: var(--bar-height);
-  transition: all var(--day-content-transition-time);
+  height: 3px;
+  transition: all 0.13s ease-in;
 }
 </style>
