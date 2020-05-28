@@ -574,6 +574,10 @@ export default {
   align-items: center;
 }
 
+.vc-day.in-next-month .vc-dot {
+  visibility: hidden;
+}
+
 .vc-dot {
   width: 5px;
   height: 5px;
